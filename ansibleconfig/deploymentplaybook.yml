@@ -1,0 +1,9 @@
+---
+# Playbook to configure personal website
+
+- name: pull down git
+  hosts: all
+  remote_user: root
+
+  roles:
+    - webapp
