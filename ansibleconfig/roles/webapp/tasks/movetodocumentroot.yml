@@ -1,4 +1,8 @@
 ---
+- name: Scrub contents of html
+  become: true
+  command: rm -rf /var/www/html/*
+  
 - name: Move Files into Appache Document Root
   become: true
   command: cp -raR /home/ubuntu/ansibletest/. /var/www/html/
